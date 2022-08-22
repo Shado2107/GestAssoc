@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="images/favicon_1.ico">
+
+    <title>Gestion association</title>
+
+    @Styles.Render("~/template/css")
+
+    <script src="~/Scripts/js/modernizr.min.js"></script>
+
+</head>
+
+
+
+<body class="fixed-left">
+
+   
+    @RenderBody()
+
+
+
+    <script>
+        var resizefunc = [];
+    </script>
+
+    @Scripts.Render("~/template/js")
+
+    <script type="text/javascript">
+        /* ==============================================
+        Counter Up
+        =============================================== */
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 100,
+                time: 1200
+            });
+        });
+    </script>
+
+</body>
+</html>
